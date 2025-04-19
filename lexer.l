@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "calculator.h"
+#include "calc.h"
 #include "parser.tab.h"  /* Generated from parser.y by Bison */
 
 /* Helper to track column position */
