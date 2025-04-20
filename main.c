@@ -26,9 +26,6 @@ int main(int argc, char **argv) {
     
     print_welcome();
     
-    printf("> ");
-    fflush(stdout);
-    
     /* Parse input and evaluate expressions */
     if (argc > 1) {
         /* If a file is specified, read from it */
@@ -52,7 +49,6 @@ int main(int argc, char **argv) {
         /* Print prompt for interactive mode */
         if (yyin == stdin) {
             printf(">> ");
-            fflush(stdout);
         }
     }
     
