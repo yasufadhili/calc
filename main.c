@@ -9,11 +9,8 @@
 void print_welcome() {
     printf("Calc\n");
     printf("==============================\n");
-    printf("Enter expressions to evaluate\n");
-    printf("Special commands:\n");
-    printf("  vars    - Show defined variables\n");
-    printf("  quit    - Exit the calculator\n");
-    printf("  clear   - Clear the screen\n");
+    printf("'vars'to show defined variables, ");
+    printf("'quit' to exit the calculator\n");
     printf("==============================\n");
 }
 
@@ -28,9 +25,6 @@ int main(int argc, char **argv) {
     init_symbol_table();
     
     print_welcome();
-    
-    printf("> ");
-    fflush(stdout);
     
     /* Parse input and evaluate expressions */
     if (argc > 1) {
@@ -55,7 +49,6 @@ int main(int argc, char **argv) {
         /* Print prompt for interactive mode */
         if (yyin == stdin) {
             printf(">> ");
-            fflush(stdout);
         }
     }
     

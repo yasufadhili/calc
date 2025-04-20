@@ -6,7 +6,7 @@ LEX = flex
 YACC = bison
 YFLAGS = -d -v
 
-TARGET = calculator
+TARGET = calc
 
 # Directories
 BUILD_DIR = build
