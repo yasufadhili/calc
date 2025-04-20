@@ -1,8 +1,3 @@
-/**
-
-TODO: Add Full Support for Hex, Binary and Octal Values, With Proper Errors
-
-**/
 
 %{
 #include <stdio.h>
