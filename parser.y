@@ -27,6 +27,7 @@ void yyerror(const char *s);
 %token <num> NUMBER
 %token <str> IDENTIFIER
 %token PLUS MINUS TIMES DIVIDE MODULO
+%token AND OR
 %token POWER LPAREN RPAREN
 %token EQUALS
 %token NEWLINE
@@ -95,6 +96,8 @@ expr:
                                     }
     | expr POWER expr               { $$ = pow($1, $3); }
     | MINUS expr %prec UMINUS       { $$ = -$2; }
+    | expr AND expr                 { $$ = (int)$1 & (int)$3; }
+    | expr OR expr                  { $$ = (int)$1 | (int)$3; }
     | LPAREN expr RPAREN            { $$ = $2; }
     ;
 

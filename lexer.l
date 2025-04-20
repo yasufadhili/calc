@@ -122,6 +122,9 @@ WHITESPACE  [ \t\r]
     return IDENTIFIER;
 }
 
+"&"                     { update_position(); return AND; }
+"|"                     { update_position(); return OR; }
+
 "+"                     { update_position(); return PLUS; }
 "-"                     { update_position(); return MINUS; }
 "*"                     { update_position(); return TIMES; }
