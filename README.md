@@ -1,7 +1,7 @@
 
-# 🧮 Calc – Advanced Expression Interpreter Console
+# 🧮Calc – Expression Interpreter Console
 
-**Calc** is a high-performance terminal-based expression interpreter written in **C11**, utilising **Flex** and **Bison** to deliver a powerful, extensible **REPL (Read-Eval-Print Loop)**. 
+**Calc** is a somewhat high-performance terminal-based expression interpreter written in **C11**, utilising **Flex** and **Bison** to deliver a powerful, extensible **REPL (Read-Eval-Print Loop)**. 
 
 It offers an expressive and programmable interface for evaluating complex expressions, conversions, and utilities with Unix philosophy in mind.
 
@@ -53,100 +53,6 @@ It offers an expressive and programmable interface for evaluating complex expres
 - Mini macros and function aliases: `def double(x) = x * 2`
 
 ---
-
-## 🚀 Getting Started
-
-### 🛠 Build Instructions
-
-Ensure you have:
-- `flex`
-- `bison`
-- `gcc`
-- `make`
-
-```bash
-git clone https://github.com/yasufadhili/calc
-cd calc
-make
-./calc
-```
-
-### 🧪 Test Suite
-
-```bash
-make test
-```
-
-Includes >30 test cases covering:
-- Arithmetic precedence
-- Bitwise and logical combinations
-- Conversion functions
-- Error messages and edge conditions
-
----
-
-## 📖 Usage Examples
-
-```shell
->> 5 + 3 * 2
-→ 11
-
->> bin(255)
-→ 0b11111111
-
->> a = 2 ** 10
-→ 1024
-
->> a + 5
-→ 1029
-
->> type(a)
-→ int64
-
->> :functions
-→ str, hex, bin, abs, gcd, ...
-```
-
----
-
-## 🛡 Security & Stability
-
-- Memory-safe architecture verified via `valgrind` and `ASan`
-- Input sanitisation and error handling
-- Sandboxed evaluation to prevent arbitrary execution
-
----
-
-## 💡 Advanced Configuration
-
-- Set theme via environment:
-  ```bash
-  export CALC_THEME=solarized
-  ```
-- Pipe support:
-  ```bash
-  echo "42 * 2" | ./calc
-  ```
----
-
-## 🧭 Roadmap
-
-Planned Features:
-- Float and precision support
-- Scriptable `.expr` batch files
-- User-defined full functions
-- Remote REPL (via sockets)
-- TUI interface using `ncurses`
-
----
-
-## 📜 Licence
-
-This project is licensed under the MIT Licence – see the [LICENSE](LICENSE) file for details.
-
----
-
-## 👤 Author
 
 Developed with precision and flexibility in mind by [Yasu Fadhili](https://github.com/yasufadhili).
 
