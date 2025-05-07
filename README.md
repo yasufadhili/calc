@@ -54,8 +54,3 @@ It offers an expressive and programmable interface for evaluating complex expres
 
 ---
 
-Developed with precision and flexibility in mind by [Yasu Fadhili](https://github.com/yasufadhili).
-
----
-
-> ⚠️ Note: Currently optimised for **Linux** terminals. Partial support for Windows via MinGW is experimental.
